@@ -1,0 +1,37 @@
+body {
+            padding-top: 60px; /* Navbar ile içeriğin arasında boşluk bırakmak için */
+            background-color: #FAEED1;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+    }
+
+main {
+            flex: 1;
+        }
+
+header .navbar {
+            margin-bottom: 20px; /* Navbar'dan alt kısmına 20 piksel boşluk bırakır */
+        }
+
+header .navbar.bg-light {
+            background-color: #643843 !important; /* Arka plan rengi */
+            text-color: white !important;
+        }
+
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:disabled,
+.btn-primary:active {
+    background-color: #6D2932 !important; /* Buton arka plan rengi */
+    border-color: #6D2932 !important; /* Buton kenarlık rengi */
+    color: white; /* Buton metin rengi */
+}
+
+.card-body {
+    background-color: #DED0B6 !important;
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+}

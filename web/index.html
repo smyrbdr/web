@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matematik Ders Notları</title>
+
+    
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Matematik</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Anasayfa</a>
+                        </li>
+                        <li class="nav-item dropdown"> <!-- Dropdown eklemek için dropdown sınıfını kullanın -->
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownDersler" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Dersler
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdownDersler"> <!-- Dropdown menüsünü oluşturun -->
+                                <li><a class="dropdown-item" href="#">Ders 1</a></li>
+                                <li><a class="dropdown-item" href="#">Ders 2</a></li>
+                                <li><a class="dropdown-item" href="#">Ders 3</a></li>
+                                <!-- İstenilen kadar dropdown öğesi ekleyin -->
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hakkımda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">İletişim</a>
+                        </li>
+                    </ul>
+
+                    <!-- Dil değiştirme düğmesi -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown" >
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Dil
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Türkçe</a></li>
+                            <li><a class="dropdown-item" href="#">English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="courses">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="images/blackboard.jpeg" class="card-img-top img-responsive" alt="Ders 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Ders 1 Başlık</h5>
+                                <p class="card-text">Ders 1 açıklama buraya gelecek.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#courseModal1">Detayları Göster</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="images/blackboard.jpeg" class="card-img-top img-responsive" alt="Ders 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Ders 2 Başlık</h5>
+                                <p class="card-text">Ders 2 açıklama buraya gelecek.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#courseModal2">Detayları Göster</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card">
+                            <img src="images/blackboard.jpeg" class="card-img-top img-responsive" alt="Ders 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Ders 3 Başlık</h5>
+                                <p class="card-text">Ders 3 açıklama buraya gelecek.</p>
+                                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#courseModal3">Detayları Göster</button>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Diğer dersler buraya eklenebilir -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+
+        <div class="container">
+            <p class="text-center">Tüm Hakları Saklıdır. &copy; 2024</p>
+        </div>
+    </footer>
+
+    
+
+
+    <div class="modal fade" id="courseModal1" tabindex="-1" role="dialog" aria-labelledby="courseModalLabel1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" >Ders 1 Detayları</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Ders 1 detayları buraya gelecek.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="courseModal2" tabindex="-1" role="dialog" aria-labelledby="courseModalLabel2" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" >Ders 2 Detayları</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Ders 2 detayları buraya gelecek.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="modal fade" id="courseModal3" tabindex="-1" role="dialog" aria-labelledby="courseModalLabel3" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" >Ders 3 Detayları</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Ders 3 detayları buraya gelecek.</p>
+            </div>
+        </div>
+    </div>
+    </div>
+</div>
+
+<script src="js/scripts.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+</html>
